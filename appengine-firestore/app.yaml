@@ -1,1 +1,2 @@
 runtime: nodejs16
+service_account: SERVICE_ACCOUNT@PROJECT.iam.gserviceaccount.com
