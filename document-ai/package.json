@@ -1,0 +1,23 @@
+{
+  "name": "document-ai",
+  "version": "0.0.1",
+  "description": "document ai sample code",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jupemara/node-samples.git"
+  },
+  "author": "jupemara",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jupemara/node-samples/issues"
+  },
+  "homepage": "https://github.com/jupemara/node-samples#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "private": true
+}
