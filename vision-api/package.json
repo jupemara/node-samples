@@ -19,5 +19,8 @@
   "devDependencies": {
     "ts-node": "^10.9.1"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@google-cloud/vision": "^2.4.2"
+  }
 }
