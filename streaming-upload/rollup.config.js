@@ -6,6 +6,6 @@ export default {
     file: 'dist/index.js',
     format: 'cjs',
   },
-  external: ['@google-cloud/functions-framework'],
+  external: ['fs', 'stream/promises', '@google-cloud/storage'],
   plugins: [typesctipt()],
 };
