@@ -1,4 +1,9 @@
-import * as functions from '@google-cloud/functions-framework';
 import { streamingUpload } from './streaming-upload';
 
-functions.http('streamingUpload', streamingUpload);
+(async () => {
+  const file = process.argv[2];
+  if (!file) {
+    throw new Error('file not specified');
+  }
+  await streamingUpload(file);
+})();
