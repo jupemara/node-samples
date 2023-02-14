@@ -15,8 +15,10 @@ export async function fn(req: Request, res: Response): Promise<void> {
   try {
     await upload(BUCKET_NAME, OBJECT_PATH, f);
     console.log('FIN');
+    res.status(200).end();
   } catch (e) {
     console.error(e);
+    res.status(500).end();
     return;
   }
 }
