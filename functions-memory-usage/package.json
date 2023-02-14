@@ -1,0 +1,26 @@
+{
+  "name": "functions-memory-usage",
+  "version": "0.0.1",
+  "description": "try to extract memory usage on cloud profile",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "build-http": "rollup -c=rollup-http.config.js --bundleConfigAsCjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jupemara",
+  "license": "WTFPL",
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.3",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/node": "^18.13.0",
+    "k6": "^0.0.0",
+    "rollup": "^3.15.0",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^6.9.2"
+  }
+}
