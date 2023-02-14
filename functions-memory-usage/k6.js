@@ -1,7 +1,15 @@
 import http from 'k6/http';
-import { sleep } from 'k6';
+
+export const options = {
+  gracefulRampDown: '1s',
+  stages: Array.from({ length: 10 }).map((v, i) => {
+    return {
+      duration: '5s',
+      target: 3 * (i + 1),
+    };
+  }),
+};
 
 export default function () {
   http.get('http://localhost:3000');
-  sleep(1);
 }
