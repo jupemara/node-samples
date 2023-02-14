@@ -11,6 +11,7 @@ const c = new Storage(),
 functions.http('x', fn);
 
 export async function fn(req: Request, res: Response): Promise<void> {
+  console.log(`${Math.floor(process.memoryUsage().heapUsed / 1024 / 1024)} MB`);
   const f = await fs.promises.readFile('./gcp.png');
   try {
     await upload(BUCKET_NAME, OBJECT_PATH, f);
