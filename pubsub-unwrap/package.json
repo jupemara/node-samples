@@ -1,0 +1,20 @@
+{
+  "name": "pubsub-unwrap",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "SWCRC=true node -r @swc-node/register src/index.ts",
+    "build": "rm -r dist/* && tsc --noEmit && swc src/ --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "gcoud"
+  },
+  "author": "jupemara",
+  "license": "WTFPL",
+  "devDependencies": {
+    "@swc-node/register": "^1.6.6",
+    "@tsconfig/node18": "^18.2.0",
+    "swc": "^1.0.11",
+    "typescript": "^5.1.6"
+  }
+}
