@@ -112,9 +112,9 @@ A: Yes! Yes! Yes! Yes! Yes! Yes!
 ```sh
 $ gcloud pubsub subscriptions create slack-incoming-webhook \
   --topic slack-incoming \
-  --push-endpoint=https://hooks.slack.com/services/QQQQQQQQQ/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    --push-no-wrapper \
-    --push-no-wrapper-write-metadata
+  --push-endpoint=https://hooks.slack.com/services/QQQQQQQQQ/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \
+  --push-no-wrapper \
+  --push-no-wrapper-write-metadata
 ```
 
 みたいに http endpoint を incoming webhook として
