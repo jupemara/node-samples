@@ -7,7 +7,6 @@
     "start": "SWCRC=true node -r @swc-node/register src/index.ts",
     "build": "rm -fr dist/* && tsc --noEmit src/index.ts && swc src/ --out-dir dist",
     "deploy": "npm run build && ./deploy.sh",
-    "publish": "gcoud",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jupemara",
