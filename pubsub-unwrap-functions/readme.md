@@ -76,7 +76,7 @@ $ gcloud pubsub topics publish unwrap-test \
   attributes: {
     'X-HOGE-API-KEY': 'secretsecret',
     googclient_schemaencoding: 'JSON',
-    googclient_schemarevisionid: '6a381d7e'
+    googclient_schemarevisionid: 'xxxxxxxx'
   }
 }
 ```
