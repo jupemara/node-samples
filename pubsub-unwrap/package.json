@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "start": "SWCRC=true node -r @swc-node/register src/index.ts",
     "build": "rm -fr dist/* && tsc --noEmit src/index.ts && swc src/ --out-dir dist",
