@@ -68,7 +68,7 @@ $ gcloud pubsub topics publish unwrap-test \
   --attribute "Content-Type=application/json,X-HOGE-API-KEY=secretsecret"
 ```
 
-ただし http endpoint ではヘッダー名は小文字になり `'x-hoge-api-key': 'secretsecret',` っと入ってくる.
+ただし http endpoint ではヘッダー名は小文字になり `'x-hoge-api-key': 'secretsecret',` っと入ってくる. (ただ RFC 的には問題ないはずなので, 通常は問題にならないでしょう)
 一方 `--attribute="Content-Type=application/json"` をつけずに `X-HOGE-API-KEY=secretsecret` だけを付与すると, request body 内に
 
 ```js
