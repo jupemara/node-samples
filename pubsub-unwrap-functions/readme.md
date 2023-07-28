@@ -1,7 +1,5 @@
 # pubsub unwrap を試す
 
-一旦 push のみ, pull は後日試してみる
-
 ## pre
 
 ```sh
